@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pillow
+torch
+yolov3 @ git+https://github.com/ultralytics/yolov3.git

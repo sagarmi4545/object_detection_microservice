@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Detection UI</title>
+</head>
+<body>
+    <h1>Upload an Image for Object Detection</h1>
+    <form action="/upload" enctype="multipart/form-data" method="post">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    {% if result %}
+        <h2>Detection Result</h2>
+        <pre>{{ result | tojson(indent=2) }}</pre>
+    {% endif %}
+</body>
+</html>
